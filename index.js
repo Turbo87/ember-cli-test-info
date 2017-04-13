@@ -35,7 +35,7 @@ module.exports = {
   @method _friendlyText
   @param {String} text Text that will be humanized.
   @param {String} testType The type of test (Unit, Acceptance, etc).
-  @param {String} blueprintType The type of bluprint (Component, Mixin, etc).
+  @param {String} blueprintType The type of blueprint (Component, Mixin, etc).
   @return {String} A normalized text with type and blueprint prefix.
   */
   _friendlyText: function(text, testType, blueprintType) {
@@ -58,7 +58,7 @@ module.exports = {
     @method name
     @param {String} name The name of the generated item.
     @param {String} testType The type of test (Unit, Acceptance, etc).
-    @param {String} blueprintType The type of bluprint (Component, Mixin, etc).
+    @param {String} blueprintType The type of blueprint (Component, Mixin, etc).
     @return {String} A normalized name with type and blueprint prefix.
   */
 
@@ -76,7 +76,7 @@ module.exports = {
     @method description
     @param {String} description The description of the generated item.
     @param {String} testType The type of test (Unit, Acceptance, etc).
-    @param {String} blueprintType The type of bluprint (Component, Mixin, etc).
+    @param {String} blueprintType The type of blueprint (Component, Mixin, etc).
     @return {String} A normalized description with type and blueprint prefix.
   */
 
