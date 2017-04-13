@@ -43,7 +43,7 @@ module.exports = {
     if (blueprintType) {
       ret += blueprintType + SEPARATOR;
     }
-    ret += this.humanize(text);
+    ret += text;
     return ret;
   },
 
@@ -63,14 +63,14 @@ module.exports = {
   */
 
   name: function(name, testType, blueprintType) {
-    return this._friendlyText(name, testType, blueprintType);
+    return this._friendlyText(this.humanize(name), testType, blueprintType);
   },
 
   /**
     Return a friendly test description
 
     ```javascript
-    description("x-foo", "Unit", "Component") // Unit | Component | x foo
+    description("x-foo", "Unit", "Component") // Unit | Component | x-foo
     ```
 
     @method description

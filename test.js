@@ -27,6 +27,6 @@ describe('testInfo.name()', function() {
 
 describe('testInfo.description()', function() {
   it('should return friendly description correctly', function() {
-    expect(testInfo.description('x-foo', 'Unit', 'Component')).to.equal('Unit | Component | x foo');
+    expect(testInfo.description('x-foo', 'Unit', 'Component')).to.equal('Unit | Component | x-foo');
   });
 });
